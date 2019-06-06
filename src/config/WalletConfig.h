@@ -10,33 +10,33 @@
 namespace WalletConfig
 {
     /* The prefix your coins address starts with */
-    const std::string_view addressPrefix = "TRTL";
+    const std::string_view addressPrefix = "bG";
 
     /* Your coins 'Ticker', e.g. Monero = XMR, Bitcoin = BTC */
-    const std::string ticker = "TRTL";
+    const std::string ticker = "BLOG";
 
     /* The filename to output the CSV to in save_csv */
-    const std::string csvFilename = "transactions.csv";
+    const std::string csvFilename = "txns.csv";
 
     /* The filename to read+write the address book to - consider starting with
        a leading '.' to make it hidden under mac+linux */
     const std::string addressBookFilename = ".addressBook.json";
 
     /* The name of your deamon */
-    const std::string daemonName = "TurtleCoind";
+    const std::string daemonName = "BlogCoinDaemon";
 
     /* The name to call this wallet */
-    const std::string walletName = "zedwallet";
+    const std::string walletName = "BlogCoinWallet";
 
     /* The name of service/walletd, the programmatic rpc interface to a
        wallet */
-    const std::string walletdName = "turtle-service";
+    const std::string walletdName = "blogcoin-service";
 
     /* The full name of your crypto */
     const std::string coinName = std::string(CryptoNote::CRYPTONOTE_NAME);
 
     /* Where can your users contact you for support? E.g. discord */
-    const std::string contactLink = "http://chat.turtlecoin.lol";
+    const std::string contactLink = "https://discord.gg/YHN4nXE";
 
 
     /* The number of decimals your coin has */
@@ -45,7 +45,7 @@ namespace WalletConfig
 
 
     /* The length of a standard address for your coin */
-    const uint16_t standardAddressLength = 99;
+    const uint16_t standardAddressLength = 102;
 
     /* The length of an integrated address for your coin - It's the same as
        a normal address, but there is a paymentID included in there - since
@@ -65,7 +65,7 @@ namespace WalletConfig
     const uint64_t minimumSend = 1;
 
     /* Is a mixin of zero disabled on your network? */
-    const bool mixinZeroDisabled = true;
+    const bool mixinZeroDisabled = false;
 
     /* If a mixin of zero is disabled, at what height was it disabled? E.g.
        fork height, or 0, if never allowed. This is ignored if a mixin of
@@ -85,7 +85,7 @@ namespace WalletConfig
     const size_t maxBodyResponseSize = 1024 * 1024 * 10;
 
     /**
-     * The amount of memory to use storing downloaded blocks - 50MB
+     * The amount of memory to use storing downloaded blocks - 48MB
      */
-    const size_t blockStoreMemoryLimit = 1024 * 1024 * 50;
+    const size_t blockStoreMemoryLimit = 1024 * 1024 * 48;
 }

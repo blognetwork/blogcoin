@@ -182,7 +182,7 @@ set_property(TARGET BlogCoinDaemon PROPERTY OUTPUT_NAME "BlogCoinDaemon")
 set_property(TARGET BlogCWallet PROPERTY OUTPUT_NAME "BlogCoinWallet")
 set_property(TARGET BlogCWallet++ PROPERTY OUTPUT_NAME "BlogCoinWallet++")
 set_property(TARGET WalletService PROPERTY OUTPUT_NAME "blogcoin-service")
-set_property(TARGET miner PROPERTY OUTPUT_NAME "blg-miner")
+set_property(TARGET miner PROPERTY OUTPUT_NAME "blogcoin-miner")
 set_property(TARGET cryptotest PROPERTY OUTPUT_NAME "cryptotest")
 set_property(TARGET WalletApi PROPERTY OUTPUT_NAME "wallet-api")
 

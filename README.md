@@ -1,5 +1,12 @@
 # BLOGCOIN
 
+| **General** | **Master build status** | **Development build status** |
+|-------------|-------------------------|------------------------------|
+| ![GitHub repo size](https://img.shields.io/github/repo-size/blognetwork/blogcoin.svg?label=Repository%20size%3A&style=popout-square) | [![Travis master branch](https://img.shields.io/travis/blognetwork/blogcoin/master.svg?label=TravisCI&style=popout-square)](https://travis-ci.org/blognetwork/blogcoin) | [![Travis development branch](https://img.shields.io/travis/blognetwork/blogcoin/development.svg?label=TravisCI&style=popout-square)](https://travis-ci.org/blognetwork/blogcoin) |
+| [![GitHub issues](https://img.shields.io/github/issues-raw/blognetwork/blogcoin.svg?label=Issues%20that%20need%20help%3A&style=popout-square)](https://github.com/blognetwork/blogcoin/issues) | [![AppVeyor master branch](https://img.shields.io/appveyor/ci/TheDevMinerTV/blogcoin/master.svg?label=AppVeyor&style=popout-square)](https://ci.appveyor.com/project/TheDevMinerTV/blogcoin) | [![AppVeyor development branch](https://img.shields.io/appveyor/ci/TheDevMinerTV/blogcoin/development.svg?label=AppVeyor&style=popout-square)](https://ci.appveyor.com/project/TheDevMinerTV/blogcoin) |
+| [![GitHub Releases](https://img.shields.io/github/downloads/blognetwork/blogcoin/total.svg?style=flat-square)](https://github.com/blognetwork/blogcoin/releases) | | |
+| [![Discord](https://img.shields.io/discord/586214949747949588.svg?label=Discord&style=popout-square)](https://discord.gg/4huZQF9) | | |
+
 ### Installing
 
 We offer binary images of the latest releases here: https://github.com/blognetwork/blogcoin/releases

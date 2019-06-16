@@ -129,10 +129,10 @@ const size_t   DIFFICULTY_LAG_V1                             = 15;
 const size_t   DIFFICULTY_LAG_V2                             = 15;
 static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
-const size_t   MAX_BLOCK_SIZE_INITIAL                        = 76800;
+const size_t   MAX_BLOCK_SIZE_INITIAL                        = 85000;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 768;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR       = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
-const uint64_t MAX_EXTRA_SIZE                                = 90000;
+const uint64_t MAX_EXTRA_SIZE                                = 95000;
 const uint64_t MAX_EXTRA_SIZE_V2                             = 100000;
 const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT                      = 25000;
 
@@ -172,8 +172,7 @@ static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] =
 {
-    5500,    // 0 - Crank the emission speed
-    150000,  // 1 - Up the TRANSACTION stuff from line 142 to 144
+    150000,  // 0 - Up the TRANSACTION stuff from line 142 to 144
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
@@ -219,9 +218,9 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  1000;  //by defa
 const uint64_t BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  200;   //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  2000;
 
-const int      P2P_DEFAULT_PORT                              =  54212;
-const int      RPC_DEFAULT_PORT                              =  54213;
-const int      SERVICE_DEFAULT_PORT                          =  54211;
+const int      P2P_DEFAULT_PORT                              =  54312;
+const int      RPC_DEFAULT_PORT                              =  54313;
+const int      SERVICE_DEFAULT_PORT                          =  54311;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -259,7 +258,7 @@ const char     LATEST_VERSION_URL[]                          = "http://latest.tu
 const std::string LICENSE_URL                                = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
-    {  0xd3, 0x1f, 0x3b, 0x7d, 0xfd, 0xc3, 0x9e, 0x79, 0x26, 0xe0, 0x47, 0xb5, 0xd2, 0xa6, 0x31, 0xf1  }
+    {  0xd4, 0x1f, 0x3c, 0x7e, 0xfd, 0xc5, 0x9e, 0x79, 0x26, 0xe0, 0x47, 0xb5, 0xd2, 0xa6, 0x31, 0xf1  }
 };
 
 const char* const SEED_NODES[] = {

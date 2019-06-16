@@ -41,7 +41,7 @@ const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX                 = 2;
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2              = 5;
 const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V3              = 10;
 
-const unsigned EMISSION_SPEED_FACTOR                         = 23;
+const unsigned EMISSION_SPEED_FACTOR                         = 22;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 /* Premine amount */
@@ -172,7 +172,8 @@ static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] =
 {
-    150000,  // 0 - Up the TRANSACTION stuff from line 142 to 144
+    5500,    // 0 - Crank the emission speed
+    150000,  // 1 - Up the TRANSACTION stuff from line 142 to 144
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */

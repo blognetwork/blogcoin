@@ -37,7 +37,7 @@ artifacts:
 deploy:
   - provider: GitHub
     auth_token:
-      secure: KFrN1rc9FJN3BEoX99whHEuK5iPHHLmDcZ1Ac7tgT9oR6AxyjL0B+XMQu4wqo+fK
+      secure: +PIlctTY6QsXh2gdWquW4i7Cc1Fkqg84ZOS8yunncBYRZr6660aEnNqTniHR3QSM
     artifact: BlogCoinRelease
     draft: false
     prerelease: false

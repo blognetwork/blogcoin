@@ -113,6 +113,6 @@ deploy:
       - BlogCoin-${TRAVIS_TAG}-${LABEL}.tar.gz
     skip_cleanup: true
     on:
-      repo: blognetwork/BlogCoin
+      repo: blognetwork/blogcoin
       tags: true
       condition: "$_DEPLOYABLE = true"

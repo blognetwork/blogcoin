@@ -90,8 +90,8 @@ const uint64_t MINIMUM_FEE                                   = UINT64_C(50000); 
 const uint64_t MINIMUM_MIXIN_V1                              = 0;
 const uint64_t MAXIMUM_MIXIN_V1                              = 4;
 
-const uint64_t MINIMUM_MIXIN_V2                              = 7;
-const uint64_t MAXIMUM_MIXIN_V2                              = 7;
+const uint64_t MINIMUM_MIXIN_V2                              = 0;
+const uint64_t MAXIMUM_MIXIN_V2                              = 3;
 
 const uint64_t MINIMUM_MIXIN_V3                              = 3;
 const uint64_t MAXIMUM_MIXIN_V3                              = 3;
@@ -133,8 +133,8 @@ const size_t   MAX_BLOCK_SIZE_INITIAL                        = 85000;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 768;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR       = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
 const uint64_t MAX_EXTRA_SIZE                                = 95000;
-const uint64_t MAX_EXTRA_SIZE_V2                             = 100000;
-const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT                      = 25000;
+const uint64_t MAX_EXTRA_SIZE_V2                             = 1024;
+const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT                      = 0;
 
 /* For new projects forked from this code base, the values immediately below
    should be changed to 0 to prevent issues with transaction processing 

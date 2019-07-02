@@ -51,14 +51,14 @@ const uint64_t GENESIS_BLOCK_REWARD                          = UINT64_C(0);
 
 * Compile your code
 
-* Run zedwallet, ignore that it can't connect to the daemon, and generate an
+* Run BlogCoinWallet, ignore that it can't connect to the daemon, and generate an
   address. Save this and the keys somewhere safe.
 
 * Launch the daemon with these arguments:
 --print-genesis-tx --genesis-block-reward-address <premine wallet address>
 
 For example:
-TurtleCoind --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW
+BlogCoinDaemon --print-genesis-tx --genesis-block-reward-address TRTLv2Fyavy8CXG8BPEbNeCHFZ1fuDCYCZ3vW5H5LXN4K2M2MHUpTENip9bbavpHvvPwb4NDkBWrNgURAd5DB38FHXWZyoBh4wW
 
 * Take the hash printed, and replace it with the hash below in GENESIS_COINBASE_TX_HEX
 
@@ -137,7 +137,7 @@ const uint64_t MAX_EXTRA_SIZE_V2                             = 1024;
 const uint64_t MAX_EXTRA_SIZE_V2_HEIGHT                      = 0;
 
 /* For new projects forked from this code base, the values immediately below
-   should be changed to 0 to prevent issues with transaction processing 
+   should be changed to 0 to prevent issues with transaction processing
    and other possible unexpected behavior */
 const uint64_t TRANSACTION_SIGNATURE_COUNT_VALIDATION_HEIGHT = 0;
 const uint64_t BLOCK_BLOB_SHUFFLE_CHECK_HEIGHT               = 0;
@@ -172,7 +172,7 @@ static_assert(UPGRADE_VOTING_WINDOW > 1, "Bad UPGRADE_VOTING_WINDOW");
 /* Block heights we are going to have hard forks at */
 const uint64_t FORK_HEIGHTS[] =
 {
-    150000,  // 0 - Up the TRANSACTION stuff from line 142 to 144
+    150000,  // 0 - Fix the DB settings
 };
 
 /* MAKE SURE TO UPDATE THIS VALUE WITH EVERY MAJOR RELEASE BEFORE A FORK */
@@ -249,20 +249,21 @@ const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; //
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
-const uint64_t DATABASE_WRITE_BUFFER_MB_DEFAULT_SIZE         = 512;           // 512 MB 
-const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 1024;          // 1 GB
+const uint64_t DATABASE_WRITE_BUFFER_MB_DEFAULT_SIZE         = 512;           // 512 MB
+const uint64_t DATABASE_READ_BUFFER_MB_DEFAULT_SIZE          = 768;           // 768 MB
 const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES               = 256;           // 256 files
-const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 8;             // 8 DB threads
+const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT     = 4;             // 8 DB threads
 
-const char     LATEST_VERSION_URL[]                          = "http://latest.turtlecoin.lol";
-const std::string LICENSE_URL                                = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
+const char     LATEST_VERSION_URL[]                          = "https://github.com/blognetwork/blogcoin/releases";
+const std::string LICENSE_URL                                = "https://github.com/blognetwork/blogcoin/blob/master/LICENSE";
 const static   boost::uuids::uuid CRYPTONOTE_NETWORK         =
 {
     {  0xd4, 0x1f, 0x3c, 0x7e, 0xfd, 0xc5, 0x9e, 0x79, 0x26, 0xe0, 0x47, 0xb5, 0xd2, 0xa6, 0x31, 0xf1  }
 };
 
 const char* const SEED_NODES[] = {
-    "5.172.219.174:54312", // sniperviperman
+//    "5.172.219.174:54312", // sniperviperman
+    "198.23.215.12:54312", // fipsi
     "99.248.93.15:54312"   // def
 };
 } // CryptoNote
